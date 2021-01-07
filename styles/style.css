@@ -11,6 +11,32 @@ button{
     padding: 18px;
 }
 
-body{
-    background-color: crimson;
+ul li a{
+    padding: 10px;
+    text-decoration-line: none;
+}
+
+ul {
+    font-size: 22px;
+    background: blueviolet;
+    padding: 20px;
+}
+
+ul.nav li a:hover {
+    color: rgb(31, 13, 0);
+}
+
+a:link {
+    color: #ceb5d8bd;
+}
+a:visited {
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+ul.nav li {
+    display: inline;
 }
