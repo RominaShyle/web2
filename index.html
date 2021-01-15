@@ -3,7 +3,6 @@
 
     <HEAD>
          <title>WEB 101</title>
-<link rel="stylesheet" href="styles/style.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
@@ -11,46 +10,103 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
  
 
-         <style>
-
-
-         </style> 
     </head>
 
-   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <!--  Linket e listes se parenditur -->
+          <a class="navbar-brand px-3" href="#">
+         Logo
+          </a>
+  
+          <!-- buton per Toggle/Collapse  -->
+  
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#barNavigimi">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="barNavigimi">
+  
+                <ul class="navbar-nav flex-fill">
+  
+                  <li class="nav-item">
+                    <a class="nav-link" href="home.html"> Home</a>
+                  </li>
+  
+  
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                         Projects
+                       </a>
+  
+                        <div class="dropdown-menu">
+                          <a href="#" class="dropdown-item"> Projekti 1</a>
+                          <a href="#" class="dropdown-item"> Projekti 2</a>
+                        </div>
+  
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="prova/test.html"> About us </a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="contact.html"> Contact </a>
+                </li>
+                </ul>
+  
+
+  
+          </div>
+  
+      </nav>
+  
         <body> 
           <div class="container-fluid">
 
-           
-            <ul class="nav">
-                <li>
-                    <a href="home.html"> About</a>
-        
-                </li>
-                <li>
-                    <a href="#"> Home</a>
-                </li>
-                <li>
-                   <a href="prova.html"> Contact</a>
-                </li>
-            </ul>
-        
-            <p class="lali">
-                KY ESHTE NJE ELEMENT PARAGRAF
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                   nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                   reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                     mollit anim id est laborum.
-            </p>
-            
-            
-       
-            <br>
             <div class="row">
-                <div class="col-6">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+                      <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+                      <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/karuseli.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/karuseli.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/karuseli.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </a>
+                  </div>
+            </div>
+
+
+
+            
+             <div class="row pt-4">
+                <div class="col-md-6 p-5" >
                     <p>
                         KY ESHTE NJE ELEMENT PARAGRAF
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -58,191 +114,122 @@
                           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                             mollit anim id est laborum.
+                                                        
                     </p>
+                    <div class="alert alert-primary" role="alert">
+                      A simple primary alert—check it out!
+                    </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6  " style="    box-shadow: -1px 9px 26px #d6b5e6;">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
 
                 </div>
 
             </div>
-<form>
-    Email:
-    <input type="email" name="email" id="" placeholder="Enter your Email">
-    Password:
-    <input type="password" name="password" id="" required value="1234" minlength="4" >
-    <input type="color" name="" id="">
-    <textarea name="" id="" cols="30" rows="10">
-        lali
-    </textarea>
-<br>
-CHECKBOX
-<input type="checkbox" name="vehicle1" id="" value="Vehicle 1">
-Vehicle 1
-<input type="checkbox" name="vehicle2" id="" value="Vehicle 2">
-Vehicle 2
-
-
- <br>
-RADIO BUTTONS
-<input type="radio" name="gender" id="" value="male">Male
-<input type="radio" name="gender" id="" value="female">Female
-<input type="radio" name="gender1" id="" value="other">Other
-<input type="radio" name="gender1" id="" value="other">Other
-
-
-
-    <br>
-    <button class="lali">
-        Log in 
-    </button>
-    
-</form>
-    
-<pre>
-    <a href="#foto"> KY ESHTE NJE ELEMENT Pre </a>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-       nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-       reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-         mollit anim id est laborum.
-
-</pre>
-
-<p class="lali">
-    KY ESHTE NJE ELEMENT PARAGRAF
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-       nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-       reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-         mollit anim id est laborum.
-</p>
-
-<br>
-
-
-<center>
-    <hr/>
-    
-    <u>
-        <H1 class="lali">
-        Ky eshte nje heading!
-    </H1>
-    </u>
-
-    
-<!-- 
-    <H2>
-        <i>
-        Ky eshte nje heading!
-         </i>
-    </H2>
-
--->
-    <p>
-        <b>
-        Ky eshte nje heading!
-        </b>
-    </p>
-
-    
-</center>
-
-
-<div  height="200px" width="200px">
-
-    <p align="center">
-        KY ESHTE NJE ELEMENT PARAGRAF
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        <a href="prova/test.html" target="_blank" >Excepteur</a>  sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-             mollit anim id est laborum.
-    </p>
-</div>
-
-<div id="foto">
-    <a href="images/img.jpg" target="_blank">
-        <img src="images/img.jpg" alt="Kjo eshte nje foto shtepie" width="300px" height="300px">
-    </a>
-</div>
-<br>
-
-Liste e parenditur:
-<br>
-<ul type="circle">
-<li> Web Design </li>
-<li> Graphic Design </li>
-<li> Elektro-Auto </li>
-</ul>
-
-<br>
-Liste e renditur:
-<br>
-<ol type="1" start="5" reversed>
-    <li> Web Design </li>
-    <li> Graphic Design </li>
-    <li> Elektro-Auto </li>
-</ol>
-
-<table border="1" bordercolor="#243d52">
-    <tbody>
-        <tr>
-            <th>Studenti</th>
-            <th colspan="2">Nota</th>
-        </tr>
-        <tr>
-            <td rowspan="2"> John </td>
-            <td> 10 </td>
-            <td> 5 </td>
-        </tr>
-        <tr>
             
-            <td> 8 </td>
-            <td> 10 </td>
-        </tr>
-    </tbody>
-</table>
-    
-<!--
-    Liste e parenditur me femije te renditur
--->
-<ul>
-    <li>
-        Viti I
-        <ol>
-            <li>
-              Letersi
-            </li>
-            <li>Biologji</li>
-        </ol>
-    </li>
-    <li>
-        Viti II
-        <ol>
-            <li>
-              Kimi
-            </li>
-            <li>Matematike</li>
-        </ol>
-    </li>
-</ul>
 
-<iframe src="home.html" frameborder="1" height="500px" width="500px">
+         
+          </div>
 
-</iframe>
- 
+          <div class="container">
+            <div class="row my-5">
 
+                <div class="col-md-3">
+                    <div class="card" style="width: 15rem;">
+                        <img src="images/bubbles.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                         <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"> Open Modal</button>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 15rem;">
+                        <img src="images/bubbles.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 15rem;">
+                        <img src="images/bubbles.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="card" style="width: 15rem;">
+                        <img src="images/bubbles.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
 
           </div>
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+         
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
 
 </body>
 

@@ -1,167 +1,272 @@
 <!DOCTYPE html>
-<html>
-
-    <HEAD>
-         <title>WEB 101</title>
-         <link rel="stylesheet" href="styles/style.css">
-
-    </head>
-
-    <body>
-        <ul class="nav">
-            <li>
-                <a href="home.html"> Home</a>
-    
-            </li>
-            <li>
-                <a href="#">About </a>
-            </li>
-            <li>
-               <a href="prova.html"> Contact</a>
-            </li>
-            <li>
-                <a href="test.html"> Test</a>
-             </li>
-        </ul>
-    
-       
-<pre>
-    KY ESHTE NJE ELEMENT Pre
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-       nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-       reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-         mollit anim id est laborum.
-
-</pre>
-
-<p>
-    KY ESHTE NJE ELEMENT PARAGRAF
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-       nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-       reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-         mollit anim id est laborum.
-</p>
-
-<br>
+<html lang="en" dir="ltr">
+  <head>
+      <meta name="viewport" content="width=device-width, inital-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Contact</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<center>
-    <hr/>
-    
-    <u>
-        <H1>
-        Ky eshte nje heading!
-    </H1>
-    </u>
+<style>
+    .btn-endri {
+        color: white;
+        background-color: green;
+        border-color: green;
+    }
+</style>
+    <link rel="stylesheet" href="css/contacts-style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
+      <!--  Linket e listes se parenditur -->
+        <a class="navbar-brand" href="#">
+        <img src="images/foto6.png" alt="foto" width="50px">
+        </a>
 
-    
-<!-- 
-    <H2>
-        <i>
-        Ky eshte nje heading!
-         </i>
-    </H2>
+        <!-- buton per Toggle/Collapse  -->
 
--->
-    <p>
-        <b>
-        Ky eshte nje heading!
-        </b>
-    </p>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#barNavigimi">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
-    
-</center>
+        <div class="collapse navbar-collapse" id="barNavigimi">
+
+              <ul class="navbar-nav flex-fill">
+
+                <li class="nav-item">
+                  <a class="nav-link" href="home.html"> Home</a>
+                </li>
 
 
-<div  height="200px" width="200px">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                       Projects
+                     </a>
 
-    <p align="center">
-        KY ESHTE NJE ELEMENT PARAGRAF
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        <a href="prova/test.html" target="_blank" >Excepteur</a>  sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-             mollit anim id est laborum.
-    </p>
+                      <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item"> Projekti 1</a>
+                        <a href="#" class="dropdown-item"> Projekti 2</a>
+                      </div>
+
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about_us.html"> About us </a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contact.html"> Contact </a>
+              </li>
+              </ul>
+
+<div class="">
+  <form class="form-inline">
+    <input type="text" class="form-control" placeholder="Search..." type="search"
+    aria-label="Search">
+    <button type="submit" class="btn btn-outline-success mx-2"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+  <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+</svg></button>
+
+  </form>
+</div>
+
+        </div>
+
+    </nav>
+
+<div class="container-fluid mb-5">
+
+  <div class="carousel slide" id="demo" data-ride="carousel">
+
+    <!-- Indikatoret -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" ></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- Slideshow -->
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/cover1.jpg" class="imazh" alt="foto1" width="900px">
+        <div class="carousel-caption">
+          <h4>`Pushime 2020`</h4>
+            </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/cover2.jpg" class="imazh" alt="foto2" width="900px">
+        <div class="carousel-caption">
+          <h4>`Pushime 2020`</h4>
+          </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/cover3.jpg" class="imazh" alt="foto3" width="900px">
+
+        <div class="carousel-caption">
+          <h4>`Pushime 2020`</h4>
+        </div>
+      </div>
+
+    </div>
+
+
+<!-- kontrollet -->
+
+<a href="#demo" class="carousel-control-prev" data-slide="prev">
+<span class="carousel-control-prev-icon"></span></a>
+
+<a href="#demo" class="carousel-control-next" data-slide="next">
+<span class="carousel-control-next-icon"></span></a>
+  </div>
+
 </div>
 
 
-<a href="images/img.jpg" target="_blank">
-<img src="images/img.jpg" alt="Kjo eshte nje foto shtepie" width="300px" height="300px">
-</a>
-<br>
 
-Liste e parenditur:
-<br>
-<ul type="circle">
-<li> Web Design </li>
-<li> Graphic Design </li>
-<li> Elektro-Auto </li>
-</ul>
+    <div class="container py-3 my-2" style="background:#cfdfc0" >
+      <div class="row">
+        <div class="col-md-4">
 
-<br>
-Liste e renditur:
-<br>
-<ol type="1" start="5" reversed>
-    <li> Web Design </li>
-    <li> Graphic Design </li>
-    <li> Elektro-Auto </li>
-</ol>
+          <h5> Ky eshte nje div me klase bootstrap-i col-6</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
 
-<table border="1" bordercolor="#243d52">
-    <tbody>
-        <tr>
-            <th>Studenti</th>
-            <th colspan="2">Nota</th>
-        </tr>
-        <tr>
-            <td rowspan="2"> John </td>
-            <td> 10 </td>
-            <td> 5 </td>
-        </tr>
-        <tr>
-            
-            <td> 8 </td>
-            <td> 10 </td>
-        </tr>
-    </tbody>
-</table>
-    
-<!--
-    Liste e parenditur me femije te renditur
--->
-<ul>
-    <li>
-        Viti I
-        <ol>
-            <li>
-              Letersi
-            </li>
-            <li>Biologji</li>
-        </ol>
-    </li>
-    <li>
-        Viti II
-        <ol>
-            <li>
-              Kimi
-            </li>
-            <li>Matematike</li>
-        </ol>
-    </li>
-</ul>
+        </div>
+        <div class="col-md-4">
+          <h5> Ky eshte nje div me klase bootstrap-i col-6</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like </p>
+            <!-- BUTON PER TE HAPUR MODALIN -->
+            <div class="d-grid gap-2">
+
+          <button type="button" class="btn btn-endri btn-block btn-sm" name="button" data-toggle="modal" data-target="#myModal">Click me!</button>
+
+
+        </div>
+
+        <div class="col-md-4">
+          <h5> Ky eshte nje div me klase bootstrap-i col-6</h5>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+        </div>
+
+      </div>
 
 
 
-    </body>
+      <h2> Shembull i Modal-it </h2>
 
 
+
+
+
+<!-- the Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-dialog-sm modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <!-- The header -->
+      <div class="modal-header">
+        <h2>Kontakt</h2>
+        <button type="button" class="close" data-dismiss="modal">x</button>
+
+      </div>
+
+      <div class="modal-body">
+
+            <form class="mb-4 ">
+              <div class="form-group">
+                <label for="email"> Email Address: </label>
+                <input type="email" class="form-control mb-2 mr-3 mx-2" name="email" placeholder="Fut email-in" id="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="passw"> Password: </label>
+                <input type="password" name="password" class="form-control mb-2 mr-3 mx-2" placeholder="Fut fjalekalimin" id="passw">
+              </div>
+
+
+
+
+        <div class="form-check">
+          <label class="form-check-label">
+          <input type="checkbox" class="form-check-input">
+        Remember me
+        </label>
+
+        </div>
+
+        <button type="button" class="btn btn-success btn-block mt-2"> Submit </button>
+
+            </form>
+
+      </div>
+<!-- Modal footer -->
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
+    </div>
+
+
+<div class="container mt-3">
+  <h3>Media Object</h3>
+
+  <div class="media border p-2">
+    <img src="images/avatar.png" alt="avatar" style="width:60px" class="rounded-circle mr-5 m-4">
+    <div class="media-body">
+
+      <h5> Jane Doe <small><i> posted on July 1st, 2020 </i> </small> </h5>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    </div>
+
+  </div>
+
+  <div class="media border p-2 my-3">
+    <img src="images/avatar.png" alt="avatar" style="width:60px" class="rounded-circle mr-5 m-4">
+    <div class="media-body">
+
+      <h5> Jane Doe <small><i> posted on July 1st, 2020 </i> </small> </h5>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<div class="media p-2">
+  <img src="images/avatar2.jpg" alt="avatar" style="width:60px; " class="rounded-circle mr-5 m-4">
+  <div class="media-body">
+
+    <h5> John Doe <small><i> posted on July 1st, 2020 </i> </small> </h5>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+</div>
+
+
+    </div>
+
+  </div>
+
+
+</div>
+</div>
+<footer class="bg-dark p-5 text-center">
+
+  <p style="color:white"> All rights reserved by ATC 2020 </p>
+<i class="fa fa-facebook fa-2x mx-2" aria-hidden="true"></i>
+<i class="fa fa-instagram fa-2x mx-2" aria-hidden="true"></i>
+<i class="fa fa-twitter fa-2x mx-2" aria-hidden="true"></i>
+</footer>
+
+  </body>
 </html>
