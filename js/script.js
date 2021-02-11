@@ -297,12 +297,27 @@ var personi = {
     age:"28" ,
     getData : function(){
         return this.firstname + " " + this.lastname + " eshte " + this.age + " vjec.";
+    },
+    greet: function(a){
+        alert("hi " + a + ". Une jam " + this.firstname)
     }
 }
 
 
-var person2 = personi; 
+var obj = {};
 
 
 
+var obj1 = {
+    ssn: "2093482904583"
+}
+
+delete obj1.ssn;   //->fshij dhe propertyn dhe vleren e propertyt
+//var person2 = personi; 
+
+
+// var vlera = prompt('Vendos nje emer', 'Ana');
+//personi.greet(vlera);
+
+obj.ssn= "12349345";
 
