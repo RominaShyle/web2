@@ -9,8 +9,28 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
  
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<style>
+
+#katrori_nje {
+
+  height: 100px;
+  width: 100px;
+  background-color: indianred;
+  position: relative;
+}
 
 
+#katrori_dy {
+
+height: 100px;
+width: 100px;
+background-color: rgb(0, 0, 0);
+position: relative;
+}
+
+
+</style>
     </head>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -117,7 +137,7 @@
                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                                         
                     </p>
-                    <div class="alert alert-primary" role="alert">
+                    <div class="alert alert-primary" role="alert" id="alert">
                       A simple primary alert—check it out!
                     </div>
                 </div>
@@ -149,8 +169,35 @@
          
           </div>
 
+          <div class="container my-5">
+            <div class="row my-3 ">
+              <div class="col-md-3">
+                <div id="katrori_nje"></div>
+              </div>
+
+              <div class="col-md-3">
+                <button id="leviz_nje" class="btn btn-success"> Animo 1</button>
+              </div>
+              <div class="col-md-3">
+                <div id="katrori_dy"></div>
+              </div>
+               <div class="col-md-3">
+              <button id="leviz_dy" class="btn btn-primary">Animo 2 </button>
+            </div>
+            </div>
+           
+          </div>
+
+
+         
+
           <div class="container">
+
+            
             <div class="row my-5">
+
+
+        
 
                 <div class="col-md-3">
                     <div class="card" style="width: 15rem;">
@@ -163,7 +210,7 @@
                       </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card" style="width: 15rem;">
+                    <div class="card" style="width: 15rem;"  id="fshehje">
                         <img src="images/bubbles.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
@@ -173,12 +220,12 @@
                       </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card" style="width: 15rem;">
+                    <div class="card" style="width: 15rem;" id="fshehje2">
                         <img src="images/bubbles.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <p class="card-text" id="datePlace">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <button class="btn btn-primary" id="showDate">Show Date</button>
                         </div>
                       </div>
                 </div>
@@ -196,6 +243,7 @@
 
           </div>
 
+       
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -232,9 +280,9 @@
   </div>
 </div>
 
-<script src="js/script.js">
+<!-- <script src="js/script.js">
 
-</script>
+</script> -->
 <script>
 
 function validateForm(){
@@ -281,7 +329,116 @@ function validateForm(){
 
 
 }
+
+
+
+//DATE
+
+var data = new Date();
+var butoniData = document.getElementById('showDate')
+butoniData.addEventListener('click', function(){
+  document.getElementById('datePlace'). innerHTML = data;
+})
+
+
+
+
 </script>
+
+<script>
+
+
+  $(document).ready(function(){
+  //var a = document.querySelector('.row .col-md-6 form .btn.btn-primary');
+
+    var butoniYne = $(".row .col-md-6 form .btn.btn-primary");
+    butoniYne.hide('slow').show(1000);
+    
+
+  $('#ciao').click(function(e){
+
+    e.preventDefault();
+//  $('#fshehje').hide(1000).show(1000)
+
+
+  })
+
+  
+  $('#ciao').dblclick(function(e){
+
+  e.preventDefault();
+  $('#fshehje2').slideToggle()
+
+})
+
+
+// $('#alert').mouseenter(function(){
+// $(this).hide(800)
+
+// })
+
+
+// $('#alert').mouseleave(function(){
+// $(this).show(900)
+
+// })
+
+
+$('#alert').hover(function(){
+$(this).hide(800);
+},
+function(){
+$(this).show(900);
+
+  })
+
+
+  
+ $('#alert').on('click', function(){
+ $(this).show(900)
+
+})
+
+$('#leviz_nje').on('click', function(){
+
+
+  $('#katrori_nje').animate({
+    left : '100px'
+  })
+})
+
+
+$('#leviz_nje').on('dblclick', function(){
+
+
+$('#katrori_nje').animate({
+  right : '100px',
+  left : '0px'
+})
+})
+
+$('#leviz_dy').on('click', function(){
+
+
+$('#katrori_dy').animate({
+  width: '200px',
+  height: '200px',
+  opacity: '0.4',
+ borderRadius: '50%'
+})
+
+$('#katrori_dy').css('background-color', 'green')
+})
+
+
+
+  })
+
+
+</script>
+
+
+
 </body>
 
 
