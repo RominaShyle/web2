@@ -12,6 +12,9 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <style>
 
+.is-invalidaaaa {
+    background-color: black;
+}
 #katrori_nje {
 
   height: 100px;
@@ -142,7 +145,7 @@ position: relative;
                     </div>
                 </div>
                 <div class="col-md-6  " style="    box-shadow: -1px 9px 26px #d6b5e6;">
-                    <form onsubmit=" return validateForm()" name="myForm">
+                    <form onsubmit=" return validateForm()" name="myForm" id="myForm">
                         <div class="mb-3">
                           <label for="username" class="form-label">Username</label>
                           <input type="username" class="form-control" id="username" aria-describedby="usernameHelp" requ>
@@ -349,6 +352,8 @@ butoniData.addEventListener('click', function(){
 
 
   $(document).ready(function(){
+
+
   //var a = document.querySelector('.row .col-md-6 form .btn.btn-primary');
 
     var butoniYne = $(".row .col-md-6 form .btn.btn-primary");
@@ -384,26 +389,29 @@ butoniData.addEventListener('click', function(){
 // })
 
 
-$('#alert').hover(function(){
-$(this).hide(800);
-},
-function(){
-$(this).show(900);
+// $('#alert').hover(function(){
+// $(this).hide(800);
+// },
+// function(){
+// $(this).show(900);
 
-  })
+//   })
 
 
   
  $('#alert').on('click', function(){
  $(this).show(900)
 
+ $(this).removeClass('alert-primary');
+ $(this).addClass('alert-success');
+ $(this).addClass('alert-link');
 })
 
 $('#leviz_nje').on('click', function(){
 
 
   $('#katrori_nje').animate({
-    left : '100px'
+    left : '50%'
   })
 })
 
@@ -417,25 +425,102 @@ $('#katrori_nje').animate({
 })
 })
 
-$('#leviz_dy').on('click', function(){
+  $('#leviz_dy').on('click', function(){
 
 
-$('#katrori_dy').animate({
-  width: '200px',
-  height: '200px',
-  opacity: '0.4',
- borderRadius: '50%'
-})
+    $('#katrori_dy').animate({
+          width: '200px',
+          height: '200px',
+          opacity: '0.4',
+        // borderRadius: '50%'
+    })
 
-$('#katrori_dy').css('background-color', 'green')
-})
+    
+    $('#katrori_dy').css({
+      'background-color': 'green',
+      'border-radius' : '50%'
+
+    })
+  
+  })
 
 
 
   })
 
 
+
+  // GETTERS DHE SETTERS 
+
+function ndryshoVlera(){
+
+  $('#username').val(); //kthen vleren e inputit te id username  ----getter----
+$('#username').val("lali") //vendos vlere te re te inputit -----setter----
+
+$('#alert').html() //kthen vleren e innerhtml  ----getter----
+$('#alert').html("vlere e re") //dryshon innerhtml -----setter----
+
+$('#alert').text("vlere e re") //kthen vleren e innerhtml  ----getter----
+$('#alert').text("vlere e re") //mbivendos vleren e tekstit ----setter----
+
+$('#alert2').attr("data-id") // kthen vleren e atributit data-id (kthen undefined nqs nuk ka )
+$('#alert2').attr("data-id", "no_123") // i vendos/mbivendos vlere atributit data-id
+
+
+
+}
+
+//ndryshoVlera() ---> keshtu therras funksionin me lart 
+
+
+// .append() ---> shton nje element si femijen e fundit te selektorit
+// .prepend() ---> shton nje element si femijen e pare te selektorit
+// .appendTo() ---> shton nje element si femijen e pare te selektorit, ne te majte kontenti, ne te djathte prindi
+
+
+
+
+var newInput ='<div class="mb-3">'+
+  '<label for="confirmInputPassword1" class="form-label"> Confirm Password</label>'+
+  '<input type="password" class="form-control" id="confirmInputPassword1">' +
+                         ' <div id="confirmPasswordHelp" class="form-text"></div> ' +
+         '</div>' ;
+         
+
+
+$('#myForm').append(newInput);
+// $('#myForm').append('<div class="mb-3"><label for="confirmInputPassword1" class="form-label"> Confirm Password</label>'+
+//   '<input type="password" class="form-control" id="confirmInputPassword1">' +
+//                          ' <div id="confirmPasswordHelp" class="form-text"></div> ' +
+//          '</div>'); 
+
+         
+$('#myForm').prepend('<p> Ky u shtua me prepend </p>');
+$('<p> aasdad </p>').appendTo('body') // ==> rasti kur si selektor, kemi nje element qe nuk ekziston, pra element i ri
+
+//$('#myForm').appendTo('body') ==> ne rastin kur selektojme nje element qe ekziston gia ne dokument, elementi i selektuar zhvendoset 
+//nga vendi fillestar dhe vendoset ne fund te prindit (qe per ne do jete elementi brenda kllapave te appendTo)
+
+
+// .after () ==> shton element pas selektorit ,, do jene siblings, e njejta hierarki 
+// per after sintaksa: $(selektori qe i referohemi).after(contenti qe do vendoset pas selektorit)
+// .before () ==> shton element para selektorit ,, do jene siblings, e njejta hierarki
+// per before sintaksa: $(selektori qe i referohemi).after(contenti qe do vendoset para selektorit)
+
+//insertAfter() => shton selektorin si element pas elementit qe ndodhet ne kllapa
+
+
+
+$('.form-check').before(newInput);
+
+
+
+$('.col-md-6.p-5 p').after("<p style='color:red'> Paragraf i shtuar me after </p>");
+
 </script>
+
+
+
 
 
 
