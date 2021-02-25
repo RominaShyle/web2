@@ -35,8 +35,36 @@
         </div>
 
 
+        <div class="row">
+         
+            <table border="1" id="tabela">
+                <tr>
+                    <td>r1c1 </td>
+                    <td>r1c2 </td>
+                </tr>
+                <tr>
+                    <td>r2c1 </td>
+                    <td>r2c2 </td>
+                </tr>
+                <tr>
+                    <td>r3c1 </td>
+                    <td>r3c2 </td>
+                </tr>
+                <tr>
+                    <td>r4c1</td>
+                    <td>r4c2 </td>
+                </tr>
+            </table>
+           
+            <button class="btn btn-success" id="ciftbtn">Gjej cift</button>
+        </div>
+
+
 <div class="row my-5">
-    jquery
+<div class="col-4 mx-3 katrori" width='50px' height='50px' style="background : red; width: 100px; height: 100px;"></div>
+<div class="col-4 mx-3 katrori" width='50px' height='50px' style="background : yellow; width: 100px; height: 100px;"></div>
+<div class="col-4 mx-3 katrori" width='50px' height='50px'style="background : blue; width: 100px; height: 100px;"></div>
+<p id="ngjyra"></p>
 </div>    
 
 
@@ -107,6 +135,8 @@
 
 
 
+
+
 </div>
 
 
@@ -118,9 +148,14 @@
 
         //2. bej disabled/aktiv butonin ne formular ne varesi te checkimit te nje inputi
 
+        //3. bej scroll to top kur klikon tek nje anchor tag, me ngadale se default
+        //4. Krijo nje fushe shahu
+        //5. bej fushen e kolones se nje tabele me ngjyre te verdhe nqs eshte even
+        //6.bej 3 katrora me ngjyra te ndryshme dhe kur klikon te njeri, te shkruhet ne nje div tjeter ngjyra e katrorit te klikuar
 
         $(document).ready(function(){
 
+            //2 zgjidhje
             $('#activate').click(function(){
 
                 if($('#myButton').is(':disabled')){
@@ -135,6 +170,7 @@
 
             })
 
+            //3 zgjidhje
 
             $('#scroll').click(function(){
                 $('html,body').animate({
@@ -143,11 +179,23 @@
 
                 return false;
             })
+            //5. zgjidhje
+            $('#ciftbtn').click(function(){
+                $('tr:even').css('background', 'orange');
+            })
 
+            //6. zgjidhje
 
-
+$('.katrori').click(function(){
+    var color = $(this).css('background-color');
+    $('#ngjyra').text(color)
+})
 
         })
+
+
+
+
 
 
 

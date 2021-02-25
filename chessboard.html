@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess board</title>
+  
+    <style>
+
+        #chessboard {
+            width: 320px;
+            height: 320px;
+            border: 1px solid black;
+        }
+
+        div{
+            width:40px;
+            height: 40px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center my-3" style="color: #848484;">ChessBoard</h1>
+    
+   <div id="chessboard" class="my-3 mx-3">
+
+    </div>
+
+    <script>
+
+        for(var i = 0; i<64; i++){
+
+            element_i_ri = document.createElement('div');
+
+            document.getElementById('chessboard').appendChild(element_i_ri).style.backgroundColor = parseInt(i/8 + i) % 2 == 0 ? 'black' : 'white'
+        }
+    </script>
+
+</body>
+</html>
